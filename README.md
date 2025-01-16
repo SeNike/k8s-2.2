@@ -10,8 +10,8 @@
 
 Создать Deployment приложения, использующего локальный PV, созданный вручную.
 
-1. Создать Deployment приложения, состоящего из контейнеров busybox и multitool.
-2. Создать PV и PVC для подключения папки на локальной ноде, которая будет использована в поде.
+1. Создать [Deployment](https://github.com/SeNike/k8s-2.2/blob/main/deployment.yaml) приложения, состоящего из контейнеров busybox и multitool.
+2. Создать [PV](https://github.com/SeNike/k8s-2.2/blob/main/local-pv.yaml) и [PVC](https://github.com/SeNike/k8s-2.2/blob/main/local-pvc.yaml) для подключения папки на локальной ноде, которая будет использована в поде.
 3. Продемонстрировать, что multitool может читать файл, в который busybox пишет каждые пять секунд в общей директории.
 ![IMG](https://github.com/SeNike/Study_24/blob/main/k8s/2.2/2.2.1.png) 
 4. Удалить Deployment и PVC. Продемонстрировать, что после этого произошло с PV. Пояснить, почему.
